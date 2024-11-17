@@ -1,5 +1,1 @@
-# eddiecanyon.github.io
-# eddiecanyon.github.io
-# eddiecanyon
-# eddiecanyon
-# eddiecanyon
+# eddie.canyon
