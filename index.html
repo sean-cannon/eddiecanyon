@@ -3,79 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my personal blog and media space!">
-    <title>Welcome to My Site</title>
+    <title>Eddie Canyon</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Black background */
             color: #fff;
-            padding: 1rem 0;
-            text-align: center;
         }
-        header h1 {
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #ffcc00; /* Yellow title accent */
             margin: 0;
-            font-size: 2.5rem;
         }
-        nav {
-            margin: 1rem 0;
-        }
-        nav a {
+
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
             color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
+            margin-top: 1rem;
+        }
+
+        .hero h2 span {
+            color: #ffcc00; /* Yellow accent for keyword */
+        }
+
+        /* Call to Action Button */
+        .hero .cta {
+            margin-top: 2rem;
+        }
+
+        .hero .cta a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1rem;
             font-weight: bold;
+            color: #000;
+            background-color: #ffcc00; /* Yellow button */
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s;
         }
-        nav a:hover {
-            text-decoration: underline;
+
+        .hero .cta a:hover {
+            background-color: #e6b800; /* Slightly darker yellow on hover */
+            transform: scale(1.05);
         }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+
+        /* Footer */
         footer {
             text-align: center;
-            margin: 2rem 0;
-            font-size: 0.9rem;
+            padding: 1rem;
+            font-size: 0.875rem;
+            color: #666;
+            background-color: #111;
         }
+
         footer a {
-            color: #333;
+            color: #ffcc00;
             text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Space</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="listen.html">Listen</a>
-            <a href="watch.html">Watch</a>
-            <a href="think/index.html">Think</a>
-            <a href="socials.html">Socials</a>
-        </nav>
-    </header>
-    <main>
-        <p>Explore my world of audio, video, thoughts, and connections!</p>
-        <p>Select a section above to get started.</p>
-    </main>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Eddie Canyon</h1>
+        <h2><span>Not</span> for the surface dwellers</h2>
+        <div class="cta">
+            <a href="think.html">Explore the Depths</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 [Your Name]. Built with ❤️ and code. <a href="https://github.com">GitHub</a></p>
+        © 2024 Eddie Canyon. Built with passion. Follow me on <a href="socials.html">Socials</a>.
     </footer>
 </body>
 </html>
