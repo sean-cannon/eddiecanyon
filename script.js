@@ -1,11 +1,11 @@
 // Skin switcher. The chosen skin is remembered in this browser only.
 (function () {
   var KEY = "ec-skin";
-  var SKINS = ["95", "geo", "bbs", "mac", "y2k", "raw"];
   var root = document.documentElement;
 
   function apply(skin) {
-    if (SKINS.indexOf(skin) < 0) skin = "95";
+    // Any skin with a button on the page is valid, so new skins need no change here.
+    if (!skin || !document.querySelector('[data-skin-btn="' + skin + '"]')) skin = "95";
     root.setAttribute("data-skin", skin);
     var buttons = document.querySelectorAll("[data-skin-btn]");
     for (var i = 0; i < buttons.length; i++) {
