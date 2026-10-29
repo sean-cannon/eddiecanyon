@@ -1,7 +1,7 @@
 // Skin switcher. The chosen skin is remembered in this browser only.
 (function () {
   var KEY = "ec-skin";
-  var SKINS = ["95", "geo", "bbs", "mac", "y2k"];
+  var SKINS = ["95", "geo", "bbs", "mac", "y2k", "raw"];
   var root = document.documentElement;
 
   function apply(skin) {
