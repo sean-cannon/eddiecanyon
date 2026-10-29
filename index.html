@@ -1,104 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eddie Canyon</title>
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #000; /* Black background */
-            color: #fff;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 0 1rem;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            color: #ffcc00; /* Yellow title accent */
-            margin: 0;
-        }
-
-        .hero h2 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: #fff;
-            margin-top: 1rem;
-        }
-
-        .hero h2 span {
-            color: #ffcc00; /* Yellow accent for keyword */
-        }
-
-        /* Call to Action Button */
-        .hero .cta {
-            margin-top: 2rem;
-        }
-
-        .hero .cta a {
-            display: inline-block;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #000;
-            background-color: #ffcc00; /* Yellow button */
-            border: none;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: transform 0.2s, background-color 0.2s;
-        }
-
-        .hero .cta a:hover {
-            background-color: #e6b800; /* Slightly darker yellow on hover */
-            transform: scale(1.05);
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.875rem;
-            color: #666;
-            background-color: #111;
-        }
-
-        footer a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eddie Canyon</title>
+  <meta name="description" content="Eddie Canyon: music, videos and writing. Not for the surface dwellers.">
+  <script>try{var s=new URLSearchParams(location.search).get("skin")||localStorage.getItem("ec-skin");if(s)document.documentElement.setAttribute("data-skin",s)}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Pixelify+Sans:wght@400;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Eddie Canyon</h1>
-        <h2><span>Not</span> for the surface dwellers</h2>
-        <div class="cta">
-            <a href="listen.html">Listen</a>
-        </div>
-        <div class="cta">
-            <a href="watch.html">Watch</a>
-        </div>
-        <div class="cta">
-            <a href="#">Think</a>
-        </div>
-    </div>
+  <div class="site">
+    <header class="masthead">
+      <h1 class="logo"><a href="./">EDDIE CANYON</a></h1>
+      <p class="tagline"><em>Not</em> for the surface dwellers</p>
+      <div class="marquee" aria-hidden="true"><span>★ welcome to the canyon ★ new music ★ live videos ★ words on substack ★ try a different skin ★ sign the guestbook (there is no guestbook) ★</span></div>
+      <div class="skins" role="group" aria-label="Site skin">
+        <span class="label">-- pick a skin --</span>
+        <button class="btn" type="button" data-skin-btn="95">Win95</button>
+        <button class="btn" type="button" data-skin-btn="geo">Geo</button>
+        <button class="btn" type="button" data-skin-btn="bbs">BBS</button>
+        <button class="btn" type="button" data-skin-btn="mac">Mac</button>
+        <button class="btn" type="button" data-skin-btn="y2k">Y2K</button>
+      </div>
+    </header>
 
-    <!-- Footer -->
-    <footer>
-        © 2024 Eddie Canyon. Built with passion. Follow me on <a href="socials.html">Socials</a>.
+    <nav class="nav bevel" aria-label="Main">
+      <h2>-- menu --</h2>
+      <ul>
+        <li><a class="btn" href="./" aria-current="page"><span class="ico">⌂</span>Home</a></li>
+        <li><a class="btn" href="listen.html"><span class="ico">♫</span>Listen</a></li>
+        <li><a class="btn" href="watch.html"><span class="ico">▶</span>Watch</a></li>
+        <li><a class="btn" href="https://eddiecanyon.substack.com" target="_blank" rel="noopener"><span class="ico">✎</span>Think<span class="ext">↗</span></a></li>
+      </ul>
+      <div class="badges" aria-hidden="true">
+        <span class="badge a">HTML 4 EVER</span>
+        <span class="badge b">Y2K<br>READY</span>
+        <span class="badge c">best viewed<br>with ears</span>
+      </div>
+    </nav>
+
+    <main>
+      <section class="window bevel">
+        <div class="titlebar"><span class="name">welcome.txt</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane">
+          <h2>Hey, you made it down here.</h2>
+          <p>I'm Eddie Canyon. I make songs, play them live, and write about what's going on underneath. Have a look around, and try a different skin up top.</p>
+        </div>
+      </section>
+
+      <div class="previews">
+        <section class="window bevel">
+        <div class="titlebar"><span class="name">♫ now_playing.mp3</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane">
+          <p class="blurb">Latest album: <b>Prompt Engineering</b></p>
+          <iframe class="spotify compact" title="Prompt Engineering on Spotify" src="https://open.spotify.com/embed/album/61uERX2yNqG7gBwaXOlmC6?utm_source=generator&amp;theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <a class="btn more" href="listen.html">All music →</a>
+        </div>
+      </section>
+        <section class="window bevel">
+        <div class="titlebar"><span class="name">▶ now_showing.avi</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane">
+          <p class="blurb">Small Town II (Official Music Video)</p>
+          <div class="video"><iframe src="https://www.youtube.com/embed/wRlo8s12v7o" title="Small Town II (Official Music Video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <a class="btn more" href="watch.html">All videos →</a>
+        </div>
+      </section>
+      </div>
+
+      <section class="window bevel" id="think">
+        <div class="titlebar"><span class="name">✎ think.txt — eddiecanyon.substack.com</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane think">
+          <div>
+            <p class="blurb" style="margin-bottom:10px">Latest from the Substack</p>
+            <ul class="posts">
+              <li><a class="post inset" href="https://eddiecanyon.substack.com/p/a-message-to-the-cave-dwellers" target="_blank" rel="noopener"><b><span class="new">NEW</span>A Message To The Cave Dwellers</b><span>Letting Your Eyes Adjust To The Shadows</span></a></li>
+              <li><a class="post inset" href="https://eddiecanyon.substack.com/p/is-ai-the-antichrist" target="_blank" rel="noopener"><b>Is A.I. The AntiChrist?</b><span>Opposing the Anointed</span></a></li>
+              <li><a class="post inset" href="https://eddiecanyon.substack.com/p/god-and-technology" target="_blank" rel="noopener"><b>God &amp; Technology</b><span>Does the Bible Reveal God’s Stance on Tech?</span></a></li>
+            </ul>
+            <p style="margin:12px 0 0"><a class="btn more" href="https://eddiecanyon.substack.com" target="_blank" rel="noopener">Read on Substack ↗</a></p>
+          </div>
+          <div class="inset subscribe-wrap">
+            <iframe class="subscribe" title="Subscribe to Eddie Canyon on Substack" src="https://eddiecanyon.substack.com/embed" scrolling="no" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="counter" aria-hidden="true">000∞42</div>
+      <div>© 2026 Eddie Canyon · hand-coded HTML</div>
     </footer>
+  </div>
 </body>
 </html>

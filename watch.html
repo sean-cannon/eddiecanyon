@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch - Eddie Canyon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 2rem auto;
-        }
-        .video-section {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .video-section h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        iframe {
-            width: 100%;
-            height: 270px;
-            border-radius: 10px;
-        }
-        @media (min-width: 600px) {
-            iframe {
-                height: 360px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watch · Eddie Canyon</title>
+  <meta name="description" content="Music videos, live sets and interviews from Eddie Canyon.">
+  <script>try{var s=new URLSearchParams(location.search).get("skin")||localStorage.getItem("ec-skin");if(s)document.documentElement.setAttribute("data-skin",s)}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Pixelify+Sans:wght@400;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Watch - Eddie Canyon</h1>
+  <div class="site">
+    <header class="masthead">
+      <h1 class="logo"><a href="./">EDDIE CANYON</a></h1>
+      <p class="tagline"><em>Not</em> for the surface dwellers</p>
+      <div class="skins" role="group" aria-label="Site skin">
+        <span class="label">-- pick a skin --</span>
+        <button class="btn" type="button" data-skin-btn="95">Win95</button>
+        <button class="btn" type="button" data-skin-btn="geo">Geo</button>
+        <button class="btn" type="button" data-skin-btn="bbs">BBS</button>
+        <button class="btn" type="button" data-skin-btn="mac">Mac</button>
+        <button class="btn" type="button" data-skin-btn="y2k">Y2K</button>
+      </div>
     </header>
-    <div class="container">
-        <div class="video-section">
-            <h2>Small Town II (Official Music Video)</h2>
-            <iframe src="https://www.youtube.com/embed/wRlo8s12v7o" title="Eddie Canyon - Small Town II (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-section">
-            <h2>Shrewd as a Serpent - LIVE (Tiny Desk Contest 2023)</h2>
-            <iframe src="https://www.youtube.com/embed/kuzIMtQo6LI" title="Eddie Canyon | Shrewd as a Serpent - LIVE (Tiny Desk Contest 2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-section">
-            <h2>Dying In The Dark (Ac808stic Version) (Lyric Video)</h2>
-            <iframe src="https://www.youtube.com/embed/ozxSg5i6p2E" title="Dying In The Dark (Ac808stic Version) (Lyric Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-section">
-            <h2>The Lunch Hour Performance</h2>
-            <iframe src="https://www.youtube.com/embed/3hEcjOW0pDw" title="The Lunch Hour performance from Eddie Canyon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-section">
-            <h2>Xplicit Xposition (NPR Tiny Desk Contest 2022)</h2>
-            <iframe src="https://www.youtube.com/embed/jV8ARlFi01k" title="Eddie Canyon - Xplicit Xposition (NPR Tiny Desk Contest 2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-section">
-            <h2>98.3 The Cannonball - Interview</h2>
-            <iframe src="https://www.youtube.com/embed/HnJ9pdTQI-I" title="98.3 The Cannonball - Eddie Canyon talks 'Idenny Theff' and The Hero's Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </div>
+
+    <nav class="nav bevel" aria-label="Main">
+      <h2>-- menu --</h2>
+      <ul>
+        <li><a class="btn" href="./"><span class="ico">⌂</span>Home</a></li>
+        <li><a class="btn" href="listen.html"><span class="ico">♫</span>Listen</a></li>
+        <li><a class="btn" href="watch.html" aria-current="page"><span class="ico">▶</span>Watch</a></li>
+        <li><a class="btn" href="https://eddiecanyon.substack.com" target="_blank" rel="noopener"><span class="ico">✎</span>Think<span class="ext">↗</span></a></li>
+      </ul>
+      <div class="badges" aria-hidden="true">
+        <span class="badge a">HTML 4 EVER</span>
+        <span class="badge b">Y2K<br>READY</span>
+        <span class="badge c">best viewed<br>with ears</span>
+      </div>
+    </nav>
+
+    <main>
+      <section class="window bevel">
+        <div class="titlebar"><span class="name">▶ Small Town II (Official Music Video)</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane"><div class="video"><iframe src="https://www.youtube.com/embed/wRlo8s12v7o" title="Small Town II (Official Music Video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+      </section>
+
+      <div class="grid-2">
+        <section class="window bevel">
+        <div class="titlebar"><span class="name">▶ Shrewd as a Serpent — Tiny Desk Contest 2023</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane"><div class="video"><iframe src="https://www.youtube.com/embed/kuzIMtQo6LI" title="Shrewd as a Serpent, live (Tiny Desk Contest 2023)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+      </section>
+        <section class="window bevel">
+        <div class="titlebar"><span class="name">▶ Xplicit Xposition — Tiny Desk Contest 2022</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane"><div class="video"><iframe src="https://www.youtube.com/embed/jV8ARlFi01k" title="Xplicit Xposition (NPR Tiny Desk Contest 2022)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+      </section>
+        <section class="window bevel">
+        <div class="titlebar"><span class="name">▶ Dying In The Dark (Ac808stic, lyric video)</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane"><div class="video"><iframe src="https://www.youtube.com/embed/ozxSg5i6p2E" title="Dying In The Dark (Ac808stic Version) (Lyric Video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+      </section>
+        <section class="window bevel">
+        <div class="titlebar"><span class="name">▶ The Lunch Hour Performance</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane"><div class="video"><iframe src="https://www.youtube.com/embed/3hEcjOW0pDw" title="The Lunch Hour performance" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+      </section>
+      </div>
+
+      <section class="window bevel">
+        <div class="titlebar"><span class="name">▶ 98.3 The Cannonball — Interview</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="pane"><div class="video"><iframe src="https://www.youtube.com/embed/HnJ9pdTQI-I" title="98.3 The Cannonball: Eddie Canyon talks Idenny Theff and The Hero's Journey" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>© 2026 Eddie Canyon · hand-coded HTML</div>
+    </footer>
+  </div>
 </body>
 </html>
