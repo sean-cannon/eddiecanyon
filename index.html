@@ -5,96 +5,222 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eddie Canyon</title>
   <meta name="description" content="Eddie Canyon: music, videos and writing. Not for the surface dwellers.">
-  <script>try{var s=new URLSearchParams(location.search).get("skin")||localStorage.getItem("ec-skin");if(s)document.documentElement.setAttribute("data-skin",s)}catch(e){}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Pixelify+Sans:wght@400;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
-  <script src="script.js?v=3" defer></script>
+  <meta property="og:title" content="Eddie Canyon">
+  <meta property="og:description" content="Music, videos and writing. Not for the surface dwellers.">
+  <meta name="theme-color" content="#e4ff3a">
+  <link rel="stylesheet" href="style.css?v=11">
+  <script src="main.js?v=10" defer></script>
 </head>
 <body>
-  <div class="site">
-    <header class="masthead">
-      <h1 class="logo"><a href="./">EDDIE CANYON</a></h1>
-      <p class="tagline"><em>Not</em> for the surface dwellers</p>
-      <div class="marquee" aria-hidden="true"><span>★ welcome to the canyon ★ new music ★ live videos ★ words on substack ★ try a different skin ★ sign the guestbook (there is no guestbook) ★</span></div>
-      <div class="skins" role="group" aria-label="Site skin">
-        <span class="label">-- pick a skin --</span>
-        <button class="btn" type="button" data-skin-btn="95">Win95</button>
-        <button class="btn" type="button" data-skin-btn="geo">Geo</button>
-        <button class="btn" type="button" data-skin-btn="bbs">BBS</button>
-        <button class="btn" type="button" data-skin-btn="mac">Mac</button>
-        <button class="btn" type="button" data-skin-btn="y2k">Y2K</button>
-        <button class="btn" type="button" data-skin-btn="raw">Raw</button>
+  <div class="ticker" aria-hidden="true"><div class="track"><span><b>Eddie Canyon</b> ++</span><span>Not for the surface dwellers ++</span><span><b>New</b> A Place Of Purification · out 10.31 ++</span><span><b>id10t</b> the album is an app ++</span><span>Words on Substack ++</span><span>Videos on YouTube ++</span><span><b>Eddie Canyon</b> ++</span><span>Not for the surface dwellers ++</span><span><b>New</b> A Place Of Purification · out 10.31 ++</span><span><b>id10t</b> the album is an app ++</span><span>Words on Substack ++</span><span>Videos on YouTube ++</span></div></div>
+
+  <nav class="rail" aria-label="Sections">
+    <a class="home" href="#top" aria-label="Top">EC</a>
+    <a href="#music" data-sec="music"><span class="n">01</span>Music</a>
+    <a href="#watch" data-sec="watch"><span class="n">02</span>Watch</a>
+    <a href="#think" data-sec="think"><span class="n">03</span>Think</a>
+    <a href="#bio" data-sec="bio"><span class="n">04</span>Bio</a>
+    <a href="#id10t" data-sec="id10t"><span class="n">05</span>id10t</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero" aria-label="Intro">
+      <div class="dark">
+        <ol class="index">
+          <li><a href="#music"><span class="n">01</span>Music</a></li>
+          <li><a href="#watch"><span class="n">02</span>Watch</a></li>
+          <li><a href="#think"><span class="n">03</span>Think</a></li>
+          <li><a href="#bio"><span class="n">04</span>Bio</a></li>
+          <li><a href="#id10t"><span class="n">05</span>id10t</a></li>
+        </ol>
       </div>
-    </header>
-
-    <nav class="nav bevel" aria-label="Main">
-      <h2>-- menu --</h2>
-      <ul>
-        <li><a class="btn" href="./" aria-current="page"><span class="ico">⌂</span>Home</a></li>
-        <li><a class="btn" href="listen.html"><span class="ico">♫</span>Listen</a></li>
-        <li><a class="btn" href="watch.html"><span class="ico">▶</span>Watch</a></li>
-        <li><a class="btn" href="https://eddiecanyon.substack.com" target="_blank" rel="noopener"><span class="ico">✎</span>Think<span class="ext">↗</span></a></li>
-      </ul>
-      <div class="badges" aria-hidden="true">
-        <span class="badge a">HTML 4 EVER</span>
-        <span class="badge b">Y2K<br>READY</span>
-        <span class="badge c">best viewed<br>with ears</span>
+      <h1><span>Eddie</span><span>Canyon</span></h1>
+      <a class="sticker" href="#id10t"><b>id10t</b>the album is an app →</a>
+      <div class="intro">
+        <p class="lede"><em>Not</em> for the surface dwellers.</p>
+        <p>Songs, live sets and writing from underneath. New feature “A Place Of Purification” lands 10.31.</p>
+        <div class="links">
+          <a class="tag solid" href="https://open.spotify.com/artist/7kMFNpUB2KM34UrnjFqYXP" target="_blank" rel="noopener">Spotify ↗</a>
+          <a class="tag" href="https://music.apple.com/us/artist/eddie-canyon/1583303151" target="_blank" rel="noopener">Apple Music ↗</a>
+          <a class="tag" href="https://www.youtube.com/@eddie.canyon" target="_blank" rel="noopener">YouTube ↗</a>
+        </div>
       </div>
-    </nav>
+    </section>
 
-    <main>
-      <section class="window bevel">
-        <div class="titlebar"><span class="name">welcome.txt</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
-        <div class="pane">
-          <h2>Hey, you made it down here.</h2>
-          <p>I'm Eddie Canyon. I make songs, play them live, and write about what's going on underneath. Have a look around, and try a different skin up top.</p>
+    <section id="music" aria-labelledby="music-h">
+      <div class="head">
+        <h2 id="music-h"><span class="num">01 / 14 releases</span>Music</h2>
+        <div class="links">
+          <a class="tag solid" href="https://open.spotify.com/artist/7kMFNpUB2KM34UrnjFqYXP" target="_blank" rel="noopener">Spotify ↗</a>
+          <a class="tag" href="https://music.apple.com/us/artist/eddie-canyon/1583303151" target="_blank" rel="noopener">Apple Music ↗</a>
         </div>
-      </section>
-
-      <div class="previews">
-        <section class="window bevel">
-        <div class="titlebar"><span class="name">♫ now_playing.mp3</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
-        <div class="pane">
-          <p class="blurb">Latest album: <b>Prompt Engineering</b></p>
-          <iframe class="spotify compact" title="Prompt Engineering on Spotify" src="https://open.spotify.com/embed/album/61uERX2yNqG7gBwaXOlmC6?utm_source=generator&amp;theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          <a class="btn more" href="listen.html">All music →</a>
-        </div>
-      </section>
-        <section class="window bevel">
-        <div class="titlebar"><span class="name">▶ now_showing.avi</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
-        <div class="pane">
-          <p class="blurb">Small Town II (Official Music Video)</p>
-          <div class="video"><iframe src="https://www.youtube.com/embed/wRlo8s12v7o" title="Small Town II (Official Music Video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <a class="btn more" href="watch.html">All videos →</a>
-        </div>
-      </section>
       </div>
+      <div class="covers">
+        <a class="rel" href="https://music.apple.com/us/album/a-place-of-purification-feat-eddie-canyon-single/6825985346" target="_blank" rel="noopener">
+          <span class="flag">Out 10.31</span><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/a9/d9/8ea9d98c-56df-19a2-bda5-18b6f08df158/885000733093.png/600x600bb.jpg" alt="A Place Of Purification cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>A Place Of Purification</b>2026 · Feature · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/wild-01-single/1833144988" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/38/57/ef385743-b8f3-48f6-d059-bb5e806ac73d/artwork.jpg/600x600bb.jpg" alt="Wild_01 cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Wild_01</b>2025 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/disclosure-single/1831331159" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/60/15/fa/6015fa0a-94eb-c159-731b-940f2a6d2899/artwork.jpg/600x600bb.jpg" alt="Disclosure cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Disclosure</b>2025 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/one-hit-single/1828250637" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a2/27/53/a227531c-7a85-67e0-3a00-ce0c537b464c/artwork.jpg/600x600bb.jpg" alt="One Hit cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>One Hit</b>2025 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/slide-single/1826706748" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/d1/f1/6bd1f10a-fa2c-e649-fe2b-47d639a1bb23/artwork.jpg/600x600bb.jpg" alt="Slide cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Slide</b>2025 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/prompt-engineering/1719641035" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e9/f5/38/e9f53818-e52d-9657-360c-aa9699002c85/artwork.jpg/600x600bb.jpg" alt="Prompt Engineering cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Prompt Engineering</b>2023 · Album</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/the-lunch-table-ep/1683331615" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/57/55/67/5755670c-c8a7-d168-f0eb-ea47d6404750/artwork.jpg/600x600bb.jpg" alt="The Lunch Table cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>The Lunch Table</b>2023 · EP</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/dying-in-the-dark-ac808stic-version-single/1648848816" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5d/11/19/5d1119bd-359c-e098-9c38-27f170d44894/artwork.jpg/600x600bb.jpg" alt="Dying In the Dark (Ac808stic) cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Dying In the Dark (Ac808stic)</b>2022 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/switch-or-fakie-single/1635338634" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/1f/da/02/1fda02ae-47ab-023e-d76d-32770495dbe9/artwork.jpg/600x600bb.jpg" alt="Switch or Fakie cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Switch or Fakie</b>2022 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/beat-tape-vol-1-instrumental-ep/1618328363" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/31/1d/df/311ddf7b-1995-f0b2-6c7e-cc10c074dc76/artwork.jpg/600x600bb.jpg" alt="Beat Tape, Vol. 1 cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Beat Tape, Vol. 1</b>2022 · Instrumental EP</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/idenny-theff/1608094179" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f7/44/34/f74434cd-4a61-1067-0405-fa99f06757b3/artwork.jpg/600x600bb.jpg" alt="Idenny Theff cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Idenny Theff</b>2022 · Album</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/xplicit-xposition-single/1607684247" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/aa/5a/e1/aa5ae110-e70a-5823-c846-d9325f5935db/artwork.jpg/600x600bb.jpg" alt="Xplicit Xposition cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Xplicit Xposition</b>2022 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/new-day-single/1585691963" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/79/f1/e8/79f1e8d5-8f02-a983-e7d0-514225561854/artwork.jpg/600x600bb.jpg" alt="New Day cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>New Day</b>2021 · Single</span>
+        </a>
+        <a class="rel" href="https://music.apple.com/us/album/small-town-ii-single/1583311690" target="_blank" rel="noopener">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b5/2e/10/b52e10ca-b9aa-c90a-2cee-71c3a5644593/artwork.jpg/600x600bb.jpg" alt="Small Town II cover" loading="lazy" width="600" height="600">
+          <span class="cap"><b>Small Town II</b>2021 · Single</span>
+        </a>
+      </div>
+    </section>
 
-      <section class="window bevel" id="think">
-        <div class="titlebar"><span class="name">✎ think.txt — eddiecanyon.substack.com</span><span class="controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
-        <div class="pane think">
-          <div>
-            <p class="blurb" style="margin-bottom:10px">Latest from the Substack</p>
-            <ul class="posts">
-              <li><a class="post inset" href="https://eddiecanyon.substack.com/p/a-message-to-the-cave-dwellers" target="_blank" rel="noopener"><b><span class="new">NEW</span>A Message To The Cave Dwellers</b><span>Letting Your Eyes Adjust To The Shadows</span></a></li>
-              <li><a class="post inset" href="https://eddiecanyon.substack.com/p/is-ai-the-antichrist" target="_blank" rel="noopener"><b>Is A.I. The AntiChrist?</b><span>Opposing the Anointed</span></a></li>
-              <li><a class="post inset" href="https://eddiecanyon.substack.com/p/god-and-technology" target="_blank" rel="noopener"><b>God &amp; Technology</b><span>Does the Bible Reveal God’s Stance on Tech?</span></a></li>
-            </ul>
-            <p style="margin:12px 0 0"><a class="btn more" href="https://eddiecanyon.substack.com" target="_blank" rel="noopener">Read on Substack ↗</a></p>
-          </div>
-          <div class="inset subscribe-wrap">
-            <iframe class="subscribe" title="Subscribe to Eddie Canyon on Substack" src="https://eddiecanyon.substack.com/embed" scrolling="no" loading="lazy"></iframe>
-          </div>
+    <section id="watch" class="watch" aria-labelledby="watch-h">
+      <div class="head">
+        <h2 id="watch-h"><span class="num">02 / YouTube</span>Watch</h2>
+        <div class="links"><a class="tag" href="https://www.youtube.com/@eddie.canyon" target="_blank" rel="noopener">@eddie.canyon ↗</a></div>
+      </div>
+      <div class="cols">
+        <div>
+          <h3><span>Music videos &amp; live</span><span>05</span></h3>
+          <a class="vid" href="https://www.youtube.com/watch?v=wRlo8s12v7o" target="_blank" rel="noopener">
+            <span class="thumb"><img src="https://i.ytimg.com/vi/wRlo8s12v7o/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></span>
+            <span><b>Small Town II</b><small>Official music video · YouTube ↗</small></span>
+          </a>
+          <a class="vid" href="https://www.youtube.com/watch?v=ozxSg5i6p2E" target="_blank" rel="noopener">
+            <span class="thumb"><img src="https://i.ytimg.com/vi/ozxSg5i6p2E/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></span>
+            <span><b>Dying In The Dark</b><small>Ac808stic · lyric video · YouTube ↗</small></span>
+          </a>
+          <a class="vid" href="https://www.youtube.com/watch?v=kuzIMtQo6LI" target="_blank" rel="noopener">
+            <span class="thumb"><img src="https://i.ytimg.com/vi/kuzIMtQo6LI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></span>
+            <span><b>Shrewd as a Serpent</b><small>Live · Tiny Desk Contest 2023 · YouTube ↗</small></span>
+          </a>
+          <a class="vid" href="https://www.youtube.com/watch?v=jV8ARlFi01k" target="_blank" rel="noopener">
+            <span class="thumb"><img src="https://i.ytimg.com/vi/jV8ARlFi01k/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></span>
+            <span><b>Xplicit Xposition</b><small>Live · Tiny Desk Contest 2022 · YouTube ↗</small></span>
+          </a>
+          <a class="vid" href="https://www.youtube.com/watch?v=3hEcjOW0pDw" target="_blank" rel="noopener">
+            <span class="thumb"><img src="https://i.ytimg.com/vi/3hEcjOW0pDw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></span>
+            <span><b>The Lunch Hour</b><small>Live performance · YouTube ↗</small></span>
+          </a>
         </div>
-      </section>
-    </main>
+        <div>
+          <h3><span>Thought videos &amp; talk</span><span>01</span></h3>
+          <a class="vid" href="https://www.youtube.com/watch?v=HnJ9pdTQI-I" target="_blank" rel="noopener">
+            <span class="thumb"><img src="https://i.ytimg.com/vi/HnJ9pdTQI-I/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></span>
+            <span><b>98.3 The Cannonball</b><small>Interview · Idenny Theff & the hero's journey · YouTube ↗</small></span>
+          </a>
+          <p class="slot">More thought videos soon.</p>
+        </div>
+      </div>
+    </section>
 
-    <footer class="foot">
-      <div class="counter" aria-hidden="true">000∞42</div>
-      <div>© 2026 Eddie Canyon · hand-coded HTML</div>
-    </footer>
-  </div>
+    <section id="think" class="think" aria-labelledby="think-h">
+      <div class="side"><div><h2 id="think-h">Think</h2><span class="num">03 / Substack</span></div></div>
+      <div>
+        <div class="bar"><span>Essays · eddiecanyon.substack.com</span><a class="tag" href="https://eddiecanyon.substack.com" target="_blank" rel="noopener">All posts ↗</a></div>
+        <div class="posts">
+          <a class="post" href="https://eddiecanyon.substack.com/p/a-message-to-the-cave-dwellers" target="_blank" rel="noopener">
+            <span class="n">01 · NEW</span>
+            <b>A Message To The Cave Dwellers</b>
+            <span>Letting your eyes adjust to the shadows</span>
+            <em>Read ↗</em>
+          </a>
+          <a class="post" href="https://eddiecanyon.substack.com/p/is-ai-the-antichrist" target="_blank" rel="noopener">
+            <span class="n">02</span>
+            <b>Is A.I. The AntiChrist?</b>
+            <span>Opposing the anointed</span>
+            <em>Read ↗</em>
+          </a>
+          <a class="post" href="https://eddiecanyon.substack.com/p/god-and-technology" target="_blank" rel="noopener">
+            <span class="n">03</span>
+            <b>God &amp; Technology</b>
+            <span>Does the Bible reveal God’s stance on tech?</span>
+            <em>Read ↗</em>
+          </a>
+        </div>
+        <a class="subscribe" href="https://eddiecanyon.substack.com/subscribe" target="_blank" rel="noopener">Subscribe on Substack ↗</a>
+      </div>
+    </section>
+
+    <section id="bio" class="bio" aria-labelledby="bio-h">
+      <div class="label"><span class="num">04</span><h2 id="bio-h">Bio</h2></div>
+      <div class="text">
+        <!-- BIO: replace this block with the write-up -->
+        <p>Eddie Canyon makes songs, plays them live, and writes about what’s underneath.</p>
+        <p class="pending">Full bio coming soon</p>
+      </div>
+    </section>
+
+    <section id="id10t" class="id10t" aria-labelledby="id10t-h">
+      <div class="copy">
+        <span class="num">05 / Eddie Canyon presents</span>
+        <h2 id="id10t-h">id10t</h2>
+        <p class="lede">The album is an app. On iPhone now. On vinyl too.</p>
+        <div class="links">
+          <a class="tag solid" href="https://apps.apple.com/app/id10t/id6747997678" target="_blank" rel="noopener">Get the app ↗</a>
+          <span class="tag muted">Vinyl: details soon</span>
+        </div>
+      </div>
+      <div class="collage" aria-hidden="true">
+        <div class="art"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/4d/f1/014df16e-9b99-dc6b-a782-4b6573fdda74/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/48x48bb.jpg" alt="" width="48" height="48"></div>
+        <div class="glyphs">id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·id10t·</div>
+        <svg class="scribble" viewBox="0 0 400 400" preserveAspectRatio="none"><path d="M49,58 58,33 Q96,71 114,42 Q116,30 86,80 Q146,39 189,55 Q175,38 196,39 Q218,60 174,92 Q232,144 246,103 Q186,71 239,57 Q223,102 201,111 Q193,73 203,112 Q162,90 152,49 Q151,85 170,94 Q213,64 221,56 Q233,22 266,10 Q226,46 280,44 Q269,24 242,40 Q204,10 199,10 Q216,47 250,50 Q231,49 172,75 Q152,62 101,62 Q111,56 156,78 Q125,86 174,93 Q186,54 185,55 Q173,52 183,61 Q182,32 175,84 Q165,43 105,51 Q51,16 10,16 Q69,20 64,18 Q64,18 91,63 Q115,60 133,106 Q92,85 106,108 Q123,122 162,125 Q199,176 192,217 Q218,261 163,307 Q195,359 253,342" fill="none" stroke="#2b3bff" stroke-width="1.4"/></svg>
+        <span class="hud">● Rec · cam 05 · id10t</span>
+        <span class="cross"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div><div class="big">Eddie Canyon</div><p>© 2026 · Not for the surface dwellers</p></div>
+    <ul>
+      <li><a href="https://open.spotify.com/artist/7kMFNpUB2KM34UrnjFqYXP" target="_blank" rel="noopener">Spotify ↗</a></li>
+      <li><a href="https://music.apple.com/us/artist/eddie-canyon/1583303151" target="_blank" rel="noopener">Apple Music ↗</a></li>
+      <li><a href="https://www.youtube.com/@eddie.canyon" target="_blank" rel="noopener">YouTube ↗</a></li>
+      <li><a href="https://eddiecanyon.substack.com" target="_blank" rel="noopener">Substack ↗</a></li>
+      <li><a href="https://apps.apple.com/app/id10t/id6747997678" target="_blank" rel="noopener">id10t app ↗</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
